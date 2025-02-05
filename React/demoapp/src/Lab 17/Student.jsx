@@ -1,7 +1,7 @@
 function Student(){
     return(
        <>
-        <h1>Welcome to Student Page</h1>
+            <h1>Welcome to Student Page</h1>
        </>
     );
 }
