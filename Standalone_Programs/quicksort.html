@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let size = parseInt(prompt("Enter array Size: "));
+        let arr = new Array(size);
+        for (let i = 0; i < size; i++) {
+            arr[i] = parseInt(prompt("Enter Element: "));
+        }
+        document.write("Entered elements<br>");
+        for (let i = 0; i < size; i++) {
+            document.write(`${arr[i]} `);
+        }
+
+        function quicksort(arr, lb, ub) {
+            if (lb < ub) {
+                let j = get_pivot(arr, lb, ub);
+                quicksort(arr, lb, j - 1);
+                quicksort(arr, j + 1, ub)
+            }
+        }
+
+        function get_pivot (arr, lb, ub) {
+            let flag = true;
+            let i = lb, j = ub+1, key = arr[lb];
+            while(flag == true) {
+                i++;
+                while(i <= ub && arr[i] < key) {
+                    i++;
+                }
+                j--;
+                while(j >= lb && arr[j] > key) {
+                    j--;
+                }
+                if(i<j) {
+                    let temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+                else {
+                    flag = false;
+                }
+            }
+            let temp = arr[lb];
+            arr[lb] = arr[j];
+            arr[j] = temp;
+            return j;
+        }
+        quicksort(arr, 0, size-1);
+        document.write("<br>Sorted elements<br>");
+            for (let i = 0; i < size; i++) {
+                document.write(`${arr[i]} `);
+
+            }
+    </script>
+</body>
+
+</html>

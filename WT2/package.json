@@ -1,0 +1,19 @@
+{
+  "name": "tejasvi",
+  "version": "1.0.0",
+  "description": "This is sem 4 WT subject practicals",
+  "main": "index.js",
+  "scripts": {
+    "doraemon": "node index.js"
+  },
+  "keywords": [
+    "[\"WT2\"",
+    "\"sem4\"]"
+  ],
+  "author": "Ms. Patel",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  }
+}

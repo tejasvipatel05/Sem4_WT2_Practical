@@ -1,0 +1,3 @@
+{"StudentID":561,"StudentName":"Tejasvi","StudentEnrollmentNumber":24010101686,"StudentMobileNumber":6356605503,"StudentDepartment":"Computer","StudentSPI":9.23}
+{"StudentID":520,"StudentName":"Sonal","StudentEnrollmentNumber":24010101456,"StudentMobileNumber":6356605503,"StudentDepartment":"Computer","StudentSPI":9.25}
+{"StudentID":597,"StudentName":"Palak","StudentEnrollmentNumber":24010101943,"StudentMobileNumber":6356605503,"StudentDepartment":"Computer","StudentSPI":2}

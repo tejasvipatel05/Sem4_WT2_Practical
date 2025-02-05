@@ -1,0 +1,11 @@
+{
+  "name": "standalone_programs",
+  "version": "1.0.0",
+  "main": "arrayMethods.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ms.Patel",
+  "license": "ISC",
+  "description": ""
+}

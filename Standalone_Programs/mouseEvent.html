@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para {
+            font-size: 100px;
+            font-family: 'Times New Roman', Times, serif;
+            color: darkcyan ;
+            font-weight: 100;
+        }
+    </style>
+</head>
+<body id="body">
+    <button id="buttonclick"><h1>Here</h1></button>
+    <p id="para"></p>
+    <script>
+        var msg;
+        let demo = document.getElementById('buttonclick');
+        // demo.addEventListener('click', MouseEventDemo);
+        demo.addEventListener('mousedown', MouseEventDemo);
+        function MouseEventDemo(event) {
+            console.log(event.button);
+            if(event.button == 1) {
+                msg = "Middle Button Clicked";
+            }
+            if (event.button == 2) {
+                msg = "Right Clicked";
+            } 
+            if (event.button == 0) {
+                msg = "Left Clicked";
+            }
+            document.getElementById('para').innerHTML = msg;
+        }
+    </script>
+</body>
+</html>

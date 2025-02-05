@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sen = prompt("Enter sentence: ");
+        let words = sen.split(" ");
+        
+        let search = prompt("Enter word to search in array: ")
+
+        for (let i = 0; i < words.length; i++) {
+            if(words[i] == search) {
+                document.write(i);
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
